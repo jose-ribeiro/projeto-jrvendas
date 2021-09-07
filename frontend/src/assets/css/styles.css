@@ -21,6 +21,7 @@ html, body {
 .footer {
     flex-shrink: 0;
     text-align: center;
+    height: 100vn;
 }
 
 .bg-primary {
@@ -29,4 +30,7 @@ html, body {
 
 .text-primary {
     color: var(--color-primary) !important;
+}
+.conteudo{
+    height: 100vn;
 }

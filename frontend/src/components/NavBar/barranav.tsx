@@ -1,4 +1,5 @@
-import bemol from 'assets/img/b.png';
+import bemol from 'assets/img/b.png'
+;import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -6,7 +7,9 @@ const NavBar = () => {
         <div className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
                 <nav className="my-2 my-md-0 mr-md-3">
+                <Link to="/">
                     <img src={bemol} width="100w" />
+                    </Link>
                         <div className="collapse navbar-collapse" id="conteudoNavbarSuportado">
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item active">
