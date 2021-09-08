@@ -1,16 +1,24 @@
 package com.jrservice.jrvendas.entities;
 
+import java.time.LocalDate;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import java.time.LocalDate;
+import javax.persistence.Table;
 
-
+@Entity
+@Table(name = "tb_dadoscidade")
 public class DadosCidade {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Integer atendimentos;
     private Double valor;
-    private LocalDate data;
+    private LocalDate date;
 
     @ManyToOne
     @JoinColumn(name = "cidade_id")
@@ -21,11 +29,11 @@ public class DadosCidade {
     }
 
 
-    public DadosCidade(Long id, Integer atendimentos, Double valor, LocalDate data, Cidade cidade) {
+    public DadosCidade(Long id, Integer atendimentos, Double valor, LocalDate date, Cidade cidade) {
         this.id = id;
         this.atendimentos = atendimentos;
         this.valor = valor;
-        this.data = data;
+        this.date = date;
         this.cidade = cidade;
     }
 
@@ -53,12 +61,12 @@ public class DadosCidade {
         this.valor = valor;
     }
 
-    public LocalDate getData() {
-        return data;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setData(LocalDate data) {
-        this.data = data;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public Cidade getCidade() {
