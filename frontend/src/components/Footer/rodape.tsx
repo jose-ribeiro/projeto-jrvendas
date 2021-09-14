@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer className="footer mt-auto py-3 bg-dark">
+        <footer className="footer mt-auto py-1 bg-dark">
             <div className="container">
                 <p className="text-light">App desenvolvido por <a href="https://github.com/jose-ribeiro" target="_blank" rel="noreferrer">Jose Willian</a></p>
                 <p className="text-light"><small><strong>JR VENDAS</strong><br />

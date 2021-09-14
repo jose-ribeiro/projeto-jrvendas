@@ -26,7 +26,7 @@ public class DadosCidadeDTO {
     }
     public DadosCidadeDTO(DadosCidade entity) {
         id = entity.getId();
-        atendimentos = getAtendimentos();
+        atendimentos = entity.getAtendimentos();
         valor = entity.getValor();
         date = entity.getDate();
         cidade = new CidadeDTO((entity.getCidade()));
