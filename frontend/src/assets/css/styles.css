@@ -6,12 +6,15 @@
 html, body {
     height: 100%;
     font-family: "Ubuntu", sans-serif;
+    
 }
 
 #root {
     display: flex;
     flex-direction: column;
     height: 100%;
+    
+        
 }
 
 .content {
@@ -34,3 +37,4 @@ html, body {
 .conteudo{
     height: 100vn;
 }
+

@@ -30,7 +30,9 @@ const Dashboard = () => {
 
                 <DataTable />
             </div>
+            <div className="menu">
             <Footer />
+            </div>
         </>
     );
 }
