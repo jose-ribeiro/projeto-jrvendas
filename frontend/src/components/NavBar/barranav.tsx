@@ -8,7 +8,7 @@ const NavBar = () => {
             <div className="container">
                 <nav className="my-2 my-md-0 mr-md-3">
                 <Link to="/">
-                    <img src={bemol} width="100w" />
+                    <img src={bemol} alt="Bemol" width="120" />
                     </Link>
                         <div className="collapse navbar-collapse" id="conteudoNavbarSuportado">
                             <ul className="navbar-nav mr-auto">
