@@ -13,11 +13,11 @@ import java.util.List;
 public interface DadosCidadeRepository extends JpaRepository <DadosCidade, Long> {
 
     @Query("SELECT new com.jrservice.jrvendas.dto.SumDTO(obj.cidade, SUM(obj.valor)) "
-            + " FROM DadosCidade AS obj GROUP BY obj.cidade")
+            + " FROM DadosCidade AS obj GROUP BY obj.cidade ORDER BY obj.cidade ASC")
     List<SumDTO> amountGroupedBySeller();
 
     @Query("SELECT new com.jrservice.jrvendas.dto.SuccessDTO(obj.cidade, SUM(obj.atendimentos)) "
-            + " FROM DadosCidade AS obj GROUP BY obj.cidade")
+            + " FROM DadosCidade AS obj GROUP BY obj.cidade ORDER BY obj.cidade ASC")
     List<SuccessDTO> sucessGroupedBySeller();
 
 }
